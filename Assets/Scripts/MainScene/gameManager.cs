@@ -6,9 +6,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-enum Sprite { doctor, lizard, wizard }
-
-
 public class gameManager : MonoBehaviour
 {
 
@@ -17,7 +14,7 @@ public class gameManager : MonoBehaviour
     public GameObject Player;
 
     public GameObject StartUI;
-    public TMP_Text textMeshPro;
+    public TMP_Text PlayerName;
 
     public GameObject CharacterBtn;
     public GameObject SelectPanel;
@@ -49,7 +46,7 @@ public class gameManager : MonoBehaviour
 
     public void CreateCharacter(string name, int character)
     {
-        textMeshPro.text = name;
+        PlayerName.text = name;
         Player.SetActive(true);
         StartUI.SetActive(false);
 
@@ -97,7 +94,7 @@ public class gameManager : MonoBehaviour
 
     public void ChangeNameConfirm(string name)
     {
-        textMeshPro.text = name;
+        PlayerName.text = name;
     }
 
     public void ChangeCharacter()

@@ -8768,7 +8768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 195492028}
   StartUI: {fileID: 1619108960}
-  textMeshPro: {fileID: 1581662503}
+  PlayerName: {fileID: 1581662503}
   CharacterBtn: {fileID: 250985322}
   SelectPanel: {fileID: 477308624}
   doctor: {fileID: 9100000, guid: d5838677c01c4614890108dba39685a2, type: 2}
